@@ -5,6 +5,9 @@ body {
     padding:0;
     color:#000000;
     font-family: "Glass Antiqua";
+    background-image:url("Pikmin4.png");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .container {
     box-sizing:border-box;
@@ -17,4 +20,7 @@ body {
     padding:5%;
     justify-content:space-between;
     row-gap:5rem;
+}
+.card {
+    background-color
 }
