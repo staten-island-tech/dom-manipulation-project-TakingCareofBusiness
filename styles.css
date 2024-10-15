@@ -22,27 +22,35 @@ p {
     border:0.3rem solid #000000;
     border-radius:5rem;
     background-color:rgba(22,159,36,0.5);
+    justify-content:space-evenly;
 
 }
-.container {
+.card-container {
     box-sizing:border-box;
+    width:80%;
+    margin:1rem auto;
+    padding:2.5%;
     display:flex;
-    width:90%;
-    margin:3rem auto;
     flex-direction:row;
     align-items:center;
     flex-wrap:wrap;
-    padding:5%;
-    justify-content:space-between;
-    row-gap:5rem;
-    background-image:url(Pikmin4.png);
-    background-repeat: no-repeat;
-    background-size:cover;
+    border:0.3rem solid #000000;
+    border-radius:5rem;
+    background-color:rgba(22,159,36,0.5);
+    justify-content:space-evenly;
 }
 .card {
-    width:33%;
-    length:50rem;
-    background-color: blue;
+    width:30%;
+    border:0.2rem solid #000000;
+    border-radius:5rem;
+    text-align:center;
+    margin-bottom:0.8rem;
+}
+.card-image {
+    height: 10rem;
+}
+.card-header {
+    font-size:3rem;
 }
 #header {
     font-size:3rem;
@@ -53,5 +61,5 @@ p {
 .form {
     display:flex;
     flex-direction:column;
-    
+    justify-content:space-evenly;
 }
