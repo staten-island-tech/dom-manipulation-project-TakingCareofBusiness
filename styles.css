@@ -7,7 +7,7 @@ body {
     font-family: "Glass Antiqua";
     background-color:#eeebdb;
 }
-p {
+label {
     font-size:1.5rem;
     text-align:center;
 }
@@ -59,4 +59,7 @@ p {
 .form {
     display:flex;
     flex-direction:column;
+}
+input {
+    width:
 }
