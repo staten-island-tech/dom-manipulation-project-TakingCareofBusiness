@@ -5,9 +5,24 @@ body {
     padding:0;
     color:#000000;
     font-family: "Glass Antiqua";
-    background-image:url("Pikmin4.png");
-    background-repeat: no-repeat;
-    background-size:cover;
+    background-color:#eeebdb;
+}
+p {
+    font-size:1.5rem;
+    text-align:center;
+}
+.form-container {
+    box-sizing:border-box;
+    width:80%;
+    margin:1rem auto;
+    padding:2.5%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border:0.3rem solid #000000;
+    border-radius:5rem;
+    background-color:rgba(22,159,36,0.5);
+
 }
 .container {
     box-sizing:border-box;
@@ -20,7 +35,23 @@ body {
     padding:5%;
     justify-content:space-between;
     row-gap:5rem;
+    background-image:url(Pikmin4.png);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .card {
-    background-color
+    width:33%;
+    length:50rem;
+    background-color: blue;
+}
+#header {
+    font-size:3rem;
+}
+#sub-header {
+    font-size:2rem;
+}
+.form {
+    display:flex;
+    flex-direction:column;
+    
 }

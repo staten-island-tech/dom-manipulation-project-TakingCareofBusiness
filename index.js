@@ -4,7 +4,7 @@ const DOMSelectors = {
   button: document.querySelector("button"),
   container: document.querySelector(".container"),
   card: document.querySelector(".card"),
-  text: document.getElementById("value"),
+  text: document.querySelector(".value"),
   cardHeader: document.querySelector("cardHeader"),
 };
 function addElement(card) {
