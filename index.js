@@ -8,8 +8,11 @@ const DOMSelectors = {
   form: document.querySelector("form"),
 };
 const pikminBodies = [
-  { name: "Red", subname: "red", image: "BlankRedPikmin.png" },
+  { name: "Blue", subname: "blue", image: "BlankBluePikmin.png" },
   { name: "Yellow", subname: "yellow", image: "BlankYellowPikmin.png" },
+  { name: "Purple", subname: "purple", image: "BlankPurplePikmin.png" },
+  { name: "Green", subname: "green", image: "BlankGreenPikmin.png" },
+  { name: "Red", subname: "red", image: "BlankRedPikmin.png" },
 ];
 let currentPikminName;
 let currentPikminColor;
