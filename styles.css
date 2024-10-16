@@ -22,6 +22,7 @@ label {
     border:0.3rem solid #000000;
     border-radius:5rem;
     background-color:rgba(22,159,36,0.5);
+    align-items:center;
 }
 .card-container {
     box-sizing:border-box;
@@ -61,5 +62,8 @@ label {
     flex-direction:column;
 }
 input {
-    width:
+    width:12rem;
+}
+button {
+    width:12rem;
 }
