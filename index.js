@@ -21,8 +21,6 @@ const pikminBodies = [
 let currentPikminName;
 let currentPikminColor;
 let currentPikminDescription;
-let currentPikminBase;
-let photoID;
 
 function createObject() {
   DOMSelectors.form.addEventListener("submit", function (event) {
