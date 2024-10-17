@@ -11,7 +11,7 @@ label {
     font-size:1.5rem;
     text-align:center;
 }
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
     margin: 0;
 }
 .form-container {
@@ -73,6 +73,11 @@ button {
 .dropdown {
     position: relative;
     display: inline-block;
+    width:12rem;
+    max-height:4rem;
+    background-color:white;
+    text-align:center;
+    border-
 }
 .dropdown-content {
     display: none;
@@ -95,4 +100,8 @@ button {
 .dropdown-content p:hover {
     background-color: #d3d3d3;
 }
+.drop-text {
+    font-size: 1.5rem;
+}
+
   

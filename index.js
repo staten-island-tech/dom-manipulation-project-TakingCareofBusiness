@@ -33,7 +33,9 @@ function createObject() {
     insertObject(currentPikminName, currentPikminDescription);
   });
 }
-
+function pikminType() {
+  DOMSelectors.
+}
 function insertObject(currentPikminName, currentPikminDescription) {
   DOMSelectors.container.insertAdjacentHTML(
     "beforeEnd",
