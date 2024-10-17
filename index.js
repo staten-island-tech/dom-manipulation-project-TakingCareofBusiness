@@ -8,13 +8,15 @@ const DOMSelectors = {
   form: document.querySelector("form"),
 };
 const pikminBodies = [
-  { name: "Normal", subname: "normal", image: "BlankNormalPikmin.png" },
-  { name: "Ear", subname: "ear", image: "BlankEarPikmin.png" },
-  { name: "Big", subname: "big", image: "BlankBigPikmin.png" },
-  { name: "Ghost", subname: "ghost", image: "BlankGhostPikmin.png" },
-  { name: "Running", subname: "running", image: "BlankRunningPikmin.png" },
-  { name: "Wing", subname: "wing", image: "BlankWingPikmin.png" },
-  { name: "Ice", subname: "ice", image: "BlankIcePikmin.png" },
+  { name: "Blue", subname: "blue", image: "BluePikmin.png" },
+  { name: "Yellow", subname: "yellow", image: "YellowPikmin.png" },
+  { name: "Purple", subname: "purple", image: "PurplePikmin.png" },
+  { name: "Glow", subname: "glow", image: "GlowPikmin.png" },
+  { name: "Red", subname: "red", image: "RedPikmin.png" },
+  { name: "Winged", subname: "winged", image: "WingedPikmin.png" },
+  { name: "Ice", subname: "ice", image: "IcePikmin.png" },
+  { name: "Rock", subname: "rock", image: "RockPikmin.png" },
+  { name: "White", subname: "white", image: "WhitePikmin.png" },
 ];
 let currentPikminName;
 let currentPikminColor;
