@@ -30,7 +30,6 @@ function createObject() {
     let currentPikminName = document.querySelector("#name").value;
     let currentPikminColor = document.querySelector("#color").value;
     let currentPikminDescription = document.querySelector("#description").value;
-    let currentPikminBase = document.querySelector("#type").value;
     insertObject(currentPikminName, currentPikminDescription);
   });
 }
