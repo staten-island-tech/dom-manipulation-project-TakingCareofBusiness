@@ -31,28 +31,14 @@ function createObject() {
     let currentPikminColor = document.querySelector("#color").value;
     let currentPikminDescription = document.querySelector("#description").value;
     let currentPikminBase = document.querySelector("#type").value;
-    insertObject(
-      currentPikminName,
-      userType(currentPikminBase),
-      currentPikminDescription
-    );
+    insertObject(currentPikminName, currentPikminDescription);
   });
 }
 
-function userType(currentPikminBase) {
-  pikminBodies
-    .filter(
-      (body) =>
-        currentPikminBase === body.name || currentPikminBase === body.subname
-    )
-    .forEach((body) => (photoID = body.image));
-  return photoID;
-}
-
-function insertObject(currentPikminName, photoID, currentPikminDescription) {
+function insertObject(currentPikminName, currentPikminDescription) {
   DOMSelectors.container.insertAdjacentHTML(
     "beforeEnd",
-    `<div class="card"><h2 class="card-header">${currentPikminName}</h2><img src= ${photoID} alt="Blank Pikmin Base" class="card-image"><p>${currentPikminDescription}</p></div>`
+    `<div class="card"><h2 class="card-header">${currentPikminName}</h2><img alt="Blank Pikmin Base" class="card-image"><p>${currentPikminDescription}</p></div>`
   );
 }
 createObject();
