@@ -38,7 +38,7 @@ function createObject() {
 function insertObject(currentPikminName, currentPikminDescription) {
   DOMSelectors.container.insertAdjacentHTML(
     "beforeEnd",
-    `<div class="card"><h2 class="card-header">${currentPikminName}</h2><img alt="Blank Pikmin Base" class="card-image"><p>${currentPikminDescription}</p></div>`
+    `<div class="card"><h2 class="card-header">${currentPikminName}</h2><p>${currentPikminDescription}</p></div>`
   );
 }
 createObject();
