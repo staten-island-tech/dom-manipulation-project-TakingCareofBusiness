@@ -6,6 +6,7 @@ const DOMSelectors = {
   card: document.querySelector(".card"),
   cardHeader: document.querySelector("cardHeader"),
   form: document.querySelector("form"),
+  typeButton: document.querySelector(".type-button"),
 };
 const pikminBodies = [
   { name: "Blue", subname: "blue", image: "BluePikmin.png" },
@@ -32,7 +33,7 @@ function createObject() {
   });
 }
 function pikminType() {
-  DOMSelectors.
+  DOMSelectors.typeButton.addEventListener();
 }
 function insertObject(currentPikminName, currentPikminDescription) {
   DOMSelectors.container.insertAdjacentHTML(
