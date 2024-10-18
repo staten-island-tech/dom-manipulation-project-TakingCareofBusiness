@@ -16,7 +16,7 @@
         <h3 id="sub-header">Create your own Pikmin here!</h3>
         <form action="" class="form">
             <label for="name">Pikmin Name</label>
-            <input type="text" name="name" id = "name">
+            <input type="text" name="name" id = "name" required>
             <label>Pikmin Type</label>
             <div class="dropdown">
                 <h4 class="drop-text">Type List</h4>
@@ -29,14 +29,14 @@
                     <button class="type-button" id="wingedButton">Winged</button>
                     <button class="type-button" id="rockButton">Rock</button>
                     <button class="type-button" id="iceButton">Ice</button>
-                    <button class="type-button" id="glowButton" type="selector">Glow</button>
+                    <button class="type-button" id="glowButton">Glow</button>
                 </div>
               </div>
             <label for="color">Pikmin Color</label>
             <input type="color" name="color" id="color">
             <label for="description">Pikmin Description</label>
             <input type="text" name="description" id="description">
-            <button type="submit">Submit</button>
+            <button class="submit-button" type="submit">Submit</button>
         </form>
     </div>
     <div class="card-container">
