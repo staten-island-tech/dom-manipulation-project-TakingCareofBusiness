@@ -6,7 +6,7 @@ const DOMSelectors = {
   card: document.querySelector(".card"),
   cardHeader: document.querySelector("cardHeader"),
   form: document.querySelector("form"),
-  typeButtons: document.querySelector("dropdown-content"),
+  typeOptions: document.querySelector("dropdown-content"),
   colorInput: document.querySelector("#color"),
 };
 const pikminBodies = [
@@ -34,8 +34,10 @@ function createObject() {
     );
   });
 }
-function pikminTypeSelector() {
-  DOMSelectors.typeButtons.addEventListener("");
+function typeSelect() {
+  DOMSelectors.typeOptions.addEventListener("click", function (event) 
+  filter
+);
 }
 function insertObject(
   currentBackgroundColor,
