@@ -6,7 +6,7 @@ const DOMSelectors = {
   card: document.querySelector(".card"),
   cardHeader: document.querySelector("cardHeader"),
   form: document.querySelector("form"),
-  typeOptions: document.querySelector("dropdown-content"),
+  typeOptions: document.querySelector(".dropdown-content"),
   colorInput: document.querySelector("#color"),
 };
 const pikminBodies = [
@@ -35,9 +35,14 @@ function createObject() {
   });
 }
 function typeSelect() {
-  DOMSelectors.typeOptions.addEventListener("click", function (event) 
-  filter
-);
+  DOMSelectors.typeOptions.addEventListener("click", function (event) {
+    let pikminType = event.target.className;
+    let selectedType;
+    pikminBodies
+      .filter((type) => type.name === pikminType)
+      .forEach((type) => (selectedType = type.image));
+    return selectedType;
+  });
 }
 function insertObject(
   currentBackgroundColor,
@@ -46,7 +51,8 @@ function insertObject(
 ) {
   DOMSelectors.container.insertAdjacentHTML(
     "beforeEnd",
-    `<div class="card" style="background-color: ${currentBackgroundColor};"><h2 class="card-header">${currentPikminName}</h2><p>${currentPikminDescription}</p></div>`
+    `<div class="card" style="background-color: ${currentBackgroundColor};"><h2 class="card-header">${currentPikminName}</h2>im<p>${currentPikminDescription}</p></div>`
   );
 }
+typeSelect();
 createObject();
