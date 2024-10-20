@@ -110,4 +110,12 @@ button {
 .card-image{
     width:80%;
 }
-  
+.remove-button-image{
+    height:100%;
+}
+.delete-card{
+    width:6rem;
+    height:2rem;
+    border:0.1rem solid black;
+    border-radius:5rem;
+}
