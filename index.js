@@ -4,30 +4,29 @@ const DOMSelectors = {
   cardHeader: document.querySelector(".cardHeader"),
   form: document.querySelector("form"),
   typeOptions: document.querySelector(".dropdown-content"),
-  colorInput: document.querySelector("#color"),
+  colorInput: document.getElementById("color"),
   title: document.getElementById("name"),
-  color: document.getElementById("color"),
   description: document.getElementById("description"),
 };
 
 const pikminBodies = [
-  { name: "Blue", subname: "blue", image: "BluePikmin.png" },
-  { name: "Yellow", subname: "yellow", image: "YellowPikmin.png" },
-  { name: "Purple", subname: "purple", image: "PurplePikmin.png" },
-  { name: "Glow", subname: "glow", image: "GlowPikmin.png" },
-  { name: "Red", subname: "red", image: "RedPikmin.png" },
-  { name: "Winged", subname: "winged", image: "WingedPikmin.png" },
-  { name: "Ice", subname: "ice", image: "IcePikmin.png" },
-  { name: "Rock", subname: "rock", image: "RockPikmin.png" },
-  { name: "White", subname: "white", image: "WhitePikmin.png" },
+  { name: "Blue", image: "BluePikmin.png" },
+  { name: "Yellow", image: "YellowPikmin.png" },
+  { name: "Purple", image: "PurplePikmin.png" },
+  { name: "Glow", image: "GlowPikmin.png" },
+  { name: "Red", image: "RedPikmin.png" },
+  { name: "Winged", image: "WingedPikmin.png" },
+  { name: "Ice", image: "IcePikmin.png" },
+  { name: "Rock", image: "RockPikmin.png" },
+  { name: "White", image: "WhitePikmin.png" },
 ];
 let currentPikminType;
 function cardLifeCycle() {
   DOMSelectors.form.addEventListener("submit", function (event) {
     event.preventDefault();
-    let currentPikminName = document.querySelector("#name").value;
+    let currentPikminName = DOMSelectors.title.value;
     let currentBackgroundColor = DOMSelectors.colorInput.value;
-    let currentPikminDescription = document.querySelector("#description").value;
+    let currentPikminDescription = DOMSelectors.description.value;
     insertObject(
       currentBackgroundColor,
       currentPikminName,
@@ -69,7 +68,7 @@ function insertObject(
 
   DOMSelectors.container.insertAdjacentHTML(
     "beforeEnd",
-    `<div class="card" style="background-color: ${currentBackgroundColor};" id="card-${idNumber}"><h2 class="card-header">${currentPikminName}</h2><img src=${currentPikminType} class="card-image"><p>${currentPikminDescription}</p><button class="delete-card" id="remove-button-${idNumber}"><img src="Bulborb.png" class="remove-button-image"></button></div>`
+    `<div class="card" style="background-color: ${currentBackgroundColor};" id="card-${idNumber}"><h2 class="card-header">${currentPikminName}</h2><img src=${currentPikminType} class="card-image"><p class="card-description">${currentPikminDescription}</p><button class="delete-card" id="remove-button-${idNumber}"><img src="Bulborb.png" class="remove-button-image"></button></div>`
   );
 }
 typeSelect();

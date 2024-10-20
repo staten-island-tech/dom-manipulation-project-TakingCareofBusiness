@@ -5,7 +5,7 @@ body {
     padding:0;
     color:#000000;
     font-family: "Glass Antiqua";
-    background-color:#eeebdb;
+    background-color:#bad36d
 }
 label {
     font-size:1.5rem;
@@ -22,10 +22,15 @@ h1, h2, h3, h4, p {
     display:flex;
     flex-direction:column;
     align-items:center;
-    border:0.3rem solid #000000;
-    border-radius:5rem;
-    background-color:rgba(22,159,36,0.5);
     align-items:center;
+    background-image:url(Background.png);
+    background-size:10rem;
+    background-repeat: no-repeat;
+    background-position-x:right;
+    background-position-y:bottom;
+    border:0.3rem solid black;
+    border-radius:5rem;
+    background-color:#eeebdb;
 }
 .card-container {
     box-sizing:border-box;
@@ -36,9 +41,6 @@ h1, h2, h3, h4, p {
     flex-direction:row;
     align-items:center;
     flex-wrap:wrap;
-    border:0.3rem solid #000000;
-    border-radius:5rem;
-    background-color:rgba(22,159,36,0.5);
     justify-content:space-evenly;
 }
 .card {
@@ -74,7 +76,6 @@ button {
     position: relative;
     display: inline-block;
     width:12rem;
-    max-height:4rem;
     background-color:white;
     text-align:center;
     border: 0.01rem solid grey;
@@ -83,11 +84,7 @@ button {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
     width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    padding:0;
 }
 
 .dropdown:hover .dropdown-content {
@@ -96,6 +93,9 @@ button {
 .dropdown-content p {
     font-size: 1rem;
     display:block;
+}
+.dropdown-content p:hover {
+    background-color:lightgray;
 }
 .dropdown-content button:hover {
     background-color: #d3d3d3;
@@ -108,14 +108,17 @@ button {
     border:0.01rem solid white;
 }
 .card-image{
-    width:80%;
+    height:10rem;
 }
 .remove-button-image{
     height:100%;
 }
 .delete-card{
-    width:6rem;
-    height:2rem;
+    width:5rem;
+    height:1.5rem;
     border:0.1rem solid black;
     border-radius:5rem;
+}
+.card-description{
+    font-size:2rem;
 }
