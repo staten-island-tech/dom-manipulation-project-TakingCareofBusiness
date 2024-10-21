@@ -46,15 +46,16 @@ h1, h2, h3, h4, p {
 .card {
     width:30%;
     border:0.2rem solid #000000;
-    border-radius:5rem;
     text-align:center;
     margin-bottom:0.8rem;
+    border-radius:2rem;
 }
 .card-image {
     height: 10rem;
 }
 .card-header {
     font-size:3rem;
+    width:100%;
 }
 #header {
     font-size:3rem;
@@ -121,4 +122,5 @@ button {
 }
 .card-description{
     font-size:2rem;
+    width:100%;
 }
