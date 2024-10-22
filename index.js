@@ -7,6 +7,7 @@ const DOMSelectors = {
   colorInput: document.getElementById("color"),
   title: document.getElementById("name"),
   description: document.getElementById("description"),
+  typeListTitle: document.querySelector(".drop-text"),
 };
 
 const pikminBodies = [
@@ -45,6 +46,7 @@ function typeSelect() {
         currentPikminType = type.image;
       }
     });
+    DOMSelectors.typeListTitle.innerHTML = `<p>${pikminType}</p>`;
   });
 }
 function clearPrompt() {
